@@ -1,7 +1,6 @@
 #pragma once
 #include <GL/glut.h>
 #include <math.h>
-#include <windows.h>
 #include <iostream>
 #include <cstdlib>
 #include <ctime>

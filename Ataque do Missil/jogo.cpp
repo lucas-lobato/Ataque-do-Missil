@@ -133,7 +133,7 @@ void Jogo::drawGameOverScreen() {
     // Configura a cor do texto como vermelho
     glColor3f(1, 0, 0);
 
-    // Define a posição do texto
+    // Define a posiï¿½ï¿½o do texto
     glRasterPos3f(0.1, 650, 1);
 
     // Escreve o texto na tela
@@ -160,13 +160,13 @@ void Jogo::drawScore() {
     
     // Definir a cor e o tamanho do texto
     glColor3f(0, 0, 0); // Preto
-    glRasterPos3f(0.1, 650, 1); // Posição do texto na tela
+    glRasterPos3f(0.1, 650, 1); // Posiï¿½ï¿½o do texto na tela
     glScalef(0.1f, 0.1f, 1.0f); // Escala do texto
 
-    // Converter a pontuação para string
+    // Converter a pontuaï¿½ï¿½o para string
     std::string pontuacaoString = "Pontuacao: " + std::to_string(pontuacao);
 
-    // Exibir a pontuação
+    // Exibir a pontuaï¿½ï¿½o
     for (char c : pontuacaoString) {
         glutBitmapCharacter(GLUT_BITMAP_TIMES_ROMAN_24, c);
     }

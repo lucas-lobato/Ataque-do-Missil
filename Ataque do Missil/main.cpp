@@ -1,5 +1,5 @@
 #define STB_IMAGE_IMPLEMENTATION
-#include "Jogo.hpp"
+#include "jogo.hpp"
 
 
 using namespace std;
@@ -95,7 +95,7 @@ void display() {
     glFlush();
 }
 
-// Pega a açao do teclado
+// Pega a aï¿½ao do teclado
 void keyboard(unsigned char key, int x, int y) {
     switch (key) {
     case 'd':
@@ -135,7 +135,7 @@ void keyboard(unsigned char key, int x, int y) {
     }
 }
 
-// Atualiza a posição das nuvens com o passar do tempo
+// Atualiza a posiï¿½ï¿½o das nuvens com o passar do tempo
 void updateClouds(int value) {
     jogo.cloudMovement = jogo.cloudMovement - 0.005;
     if (jogo.cloudMovement < -2) {
@@ -145,7 +145,7 @@ void updateClouds(int value) {
     glutTimerFunc(120, updateClouds, 0);
 }
 
-// Atualiza a posição do missil com o passar do tempo
+// Atualiza a posiï¿½ï¿½o do missil com o passar do tempo
 void updateMissil(int value) {
     jogo.missilMovement = jogo.missilMovement - 0.01;
     jogo.missilLocation = jogo.missilLocation + 0.01;
