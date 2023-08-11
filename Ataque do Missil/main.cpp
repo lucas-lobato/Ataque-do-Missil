@@ -42,9 +42,9 @@ void reshape(int w, int h) {
 // display
 void display() {
 
-    // termina o jogo o jogo
+    // termina o jogo
     if (jogo.gameOver) {
-        system("pause");
+        //system("pause");
         exit(0);
     }
 
