@@ -44,7 +44,7 @@ void display() {
 
     // termina o jogo
     if (jogo.gameOver) {
-        //system("pause");
+        getchar();
         exit(0);
     }
 
